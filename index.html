@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <link rel="stylesheet" href="./styles.css">
+
+
+</head>
+<body>
+  
+  <header>
+    <img src="./images/logo.svg" alt="logo" class="header-logo logo">
+    <img src="./images/icon-hamburger.svg" alt="hamburger" class="hamburger">
+    
+    <div class="menu">
+      <div class="menu__header">
+        <img src="./images/logo.svg" alt="logo" class="logo" >
+        <img src="./images/icon-close.svg" alt="hamburger" class="close">
+      </div>
+      <div class="links">
+        <a>About</a>
+        <a>Careers</a>
+        <a>Events</a>
+        <a>Products</a>
+        <a>Support</a>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="s1">
+      <h2>Immersive experiences that deliver</h2>
+    </section>
+
+    <section class="s2">
+      <div>
+        <img src="./images/mobile/image-interactive.jpg" alt="">
+      </div>
+      <div>
+
+        <h2>The leader in interactive VR</h2>
+        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.</p>
+        </div>
+    </section>
+
+    <section class="s3">
+      <div>
+        <h2>Our creations</h2>
+        <button>See all</button>
+      </div>
+      <div class="deep"><h3>Deep earth</h3></div>
+      <div class="arcade"><h3>Night arcade</h3></div>
+      <div class="soccer"><h3>Soccer team VR</h3></div>
+      <div class="grid"><h3>The grid</h3></div>
+      <div class="vr"><h3>From up above VR</h3></div>
+      <div class="pocket"><h3>Pocket boreal</h3></div>
+      <div class="cury"><h3>The curiosity</h3></div>
+      <div class="fish"><h3>Make it fisheye</h3></div>
+
+      <button>See all</button>
+    </section>
+</main>
+
+  <footer >
+    <div class="footer-a">
+        <img src="./images/logo.svg" alt="logo" class="logo">
+
+        <a>About</a>
+        <a>Careers</a>
+        <a>Events</a>
+        <a>Products</a>
+        <a>Support</a>
+    </div>
+    <div>
+      <div class="social">
+        <img src="./images/icon-facebook.svg" alt="">
+        <img src="./images/icon-twitter.svg" alt="">
+        <img src="./images/icon-pinterest.svg" alt="">
+        <img src="./images/icon-instagram.svg" alt="">
+      </div>
+    
+      <p>© 2021 Loopstudios. All rights reserved.</p>
+    
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      Coded by <a href="#">thekindbard</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.close').addEventListener('click', () => document.querySelector('.menu').style.display = "none")
+    document.querySelector('.hamburger').addEventListener('click', () => document.querySelector('.menu').style.display = "flex")
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 400) {
+        document.querySelector('.menu').style.display = "flex";
+        document.querySelector('.menu').classList.add('menuDesktop');
+      } else {
+        document.querySelector('.menu').style.display = "none";
+        document.querySelector('.menu').classList.remove('menuDesktop');
+      }
+    })
+  </script>
+</body>
+</html>
