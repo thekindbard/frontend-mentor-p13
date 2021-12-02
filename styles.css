@@ -374,9 +374,10 @@ footer a {
     .s1 {
         justify-content: start;
         padding: 0 10%;
+        min-height: 70vh;
     }
     .s1 h2 {
-        font-size:3em;
+        font-size:4em;
         width: 400px;
         margin: 0;
         
